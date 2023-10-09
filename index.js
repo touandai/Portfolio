@@ -1,0 +1,1 @@
+alert ("voudriez-vous visiter la page web de Charles Cantin ? ");

@@ -1,0 +1,67 @@
+
+body
+{
+    background-image:url("images/fondecran.png");
+    background-size: cover;  
+    background-repeat: no-repeat;  
+}
+.container-fluid
+{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.container
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+.main
+{
+  margin-top: 20px;
+  background-color:white;
+}
+
+li:first-child::before 
+{
+   content: "\0020 \2302";
+} 
+
+ul >li
+{
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    font-size: larger;
+}
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+ h1
+  {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+@media screan and (max-width:1500) {
+   .container-fluid{
+    width:90%;
+   }
+
+}
+
