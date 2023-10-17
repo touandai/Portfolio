@@ -1,6 +1,5 @@
 window.onload =() => {
     let Filtres  = document.querySelectorAll("#filtre div");
-
         for (let Filtre of Filtres){
             Filtre.addEventListener("click", function(){
                let tag = this.id;

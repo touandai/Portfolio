@@ -20,7 +20,9 @@ body
 }
 main
 {
+    padding: 20px;
     margin-top: 20px; 
+    margin-bottom: 20px; 
     background-color: aliceblue;
 }
 #filtre
@@ -37,7 +39,6 @@ main
     border-radius: 20px;
     cursor: pointer;
 }
-
 #galerie
 {
     display: flex;
