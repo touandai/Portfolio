@@ -24,6 +24,7 @@ body
   display  : flex;
   justify-content: center;  
   margin-top: 20px;
+  margin-bottom: 50px;
   background-color:white;
 }
 
@@ -62,7 +63,7 @@ img {
 
 @media screen and (max-width:768 {
    main{
-    font-size: 1,5rem;
+    flex
    }
 }
 
