@@ -14,6 +14,7 @@ body
 .container
 {
     margin-top: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     background-color: aliceblue;
@@ -22,9 +23,6 @@ section
 {
     margin-top: 20px;
     padding:5px;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
     background-color: aliceblue;
 }
 .prestation
