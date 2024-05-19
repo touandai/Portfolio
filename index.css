@@ -1,67 +1,101 @@
-
-body
-{
-    background-image:url("images/fondecran.png");
-    background-size: cover;  
-    background-repeat: no-repeat;  
+body {
+  background-image: url("images/fondecran.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.container-fluid
-{
+.container-fluid {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding-top: 20px;
+  margin: 5px;
+  padding: 20px;
 }
-.container
-{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    background-color:white;
+.navigation {
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
-.main
-{
-  margin-top: 20px;
-  padding:20px;
-  background-color:white;
+.main {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: gray;
+  padding: 200px;
+}
+.tarifs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: gray;
+}
+footer {
+  background-color: white;
+}
+li:first-child::before {
+  content: "\0020 \2302";
 }
 
-li:first-child::before 
-{
-   content: "\0020 \2302";
-} 
-
-ul >li
-{
-    display: inline;
-    padding: 10px;
-    margin: 10px;
-    font-size: larger;
+ul > li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
 }
-a
-{
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 img {
-    max-width: 100%;
-    height: auto; 
-  }
-
- h1
-  {
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  }
-
-@media screen and (max-width:768 {
-   main{
-    font-size: 50%;
-   }
+  max-width: 100%;
+  height: auto;
 }
 
+h1 {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*page galerie*/
+.content {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+#filtre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#filtre div {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid tomato;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#galerie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#galerie .active {
+  transition: widht 0.3s;
+}
+#galerie .inactive {
+  width: 0;
+  padding: 0;
+  transition: widht 0.3s;
+}
+
+@media screen and {
+  main {
+    font-size: 50%;
+  }
+}

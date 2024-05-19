@@ -6,7 +6,7 @@
     <meta name="description" content="Contacter Charles CANTIN">
     <title> contact Charles Cantin </title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="contact.js" defer></script>
+    
 </head>
 
 <body>
@@ -46,6 +46,7 @@
    <footer class="container">
        <p><a href="#">Tout droit réservé copyright</a></p>
    </footer>
+   <script src="contact.js"></script>
    
  </body>
  </html>     

@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="notre galerie">
     <title> Galerie Photos Charles Cantin </title>
-    <link rel="stylesheet" href="galerie.css">
-    <script src="galerie.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <header class="container-fluid"><!--logo--> 
-        <img src ="images/logo.png" alt="Notre Logo"/>
-   </header>
-   <nav class="container"><!--Rubrique/menu--> 
-       <ul>
-           <li><a href="index.html">Accueil</a></li>
-           <li><a href="galerie.html">Galerie</a></li>
-           <li><a href="tarifsetprestations.html">Tarifs et Prestations</a></li>
-           <li><a href="contact.html">Contact</a></li>
-       </ul>
-   </nav>
+    <header class="container-fluid">
+        <img src="images/logo2.png" alt="Notre Logo" />
+    </header>
+  
+    <nav class="container navigation">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="tarifsetprestations.html">Tarifs et Prestations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
    <main>
         <section id="filtre">
             <div id ="tout">Tout</div>
@@ -47,12 +49,11 @@
            <img class="active" data-couple alt="couple" src="Galerie/couple2.jpg">
       </div>
    </main>
-   <footer class="container">
-       <p><a href="#">Tout droit réservé copyright</a></p>
+
+   <footer class="container-fluid">
+       <a href="#">Tout droit réservé copyright</a>
    </footer>
 
-   </body>
-   </html>
-
+   <script src="galerie.js"></script>
 </body>
 </html>
