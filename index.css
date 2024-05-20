@@ -12,10 +12,12 @@ body {
 .navigation {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: white;
 }
 .main {
   display: flex;
+  justify-content: center;
   margin-top: 25px;
   margin-bottom: 25px;
   background-color: white;
@@ -36,21 +38,22 @@ a {
   text-align: center;
   padding: 10px;
   font-size: larger;
+  text-decoration: none;
 }
 li:first-child::before {
   content: "\0020 \2302";
 }
 
+nav,
 ul > li {
   display: inline;
   padding: 10px;
   margin: 10px;
   font-size: larger;
 }
+nav,
 a {
   text-decoration: none;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 img {
   max-width: 100%;
@@ -64,6 +67,7 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
 }
+main,
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
