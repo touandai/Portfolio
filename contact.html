@@ -23,45 +23,49 @@
       </ul>
     </nav>
 
-    <main class="container tarifs">
-      <div class="formulaire col">
-        <h1>Nous-contacter</h1>
-        <hr />
-      </div>
+    <h1>Nous-contacter</h1>
+    <hr />
 
-      <div class="form col">
-        <form id="contact" method="POST" data-netlify="true">
+    <main class="container tarifs">
+      <div id="form" class="form">
+        <form id="contact" method="GET" action="" data-netlify="true">
           <legend>
-            Une question, ou envie de nous faire des remarques?<br />
-            Merci d'utiliser le formulaire ci-dessous
+            <em
+              >Une question, ou envie de nous faire des remarques?<br />
+              Merci d'utiliser le formulaire ci-dessous</em
+            >
           </legend>
           <div>
-            <label class="form-label">Nom :*</label>
+            <label class="form-label"><b>Nom :*</b></label>
             <input
               class="form-control"
               type="text"
-              name="name"
-              placeholder="Par exemple Brice"
-              required
+              name="nom"
+              id="nom"
+              placeholder="Romaric"
             />
+            <span id="erreurnom"></span>
           </div>
           <div>
-            <label class="form-label"> E-mail :* </label>
+            <label class="form-label"><b>E-mail :* </b></label>
             <input
               class="form-control"
               type="email"
               name="email"
-              placeholder="monadresse@....."
+              id="email"
+              placeholder="monadresse@gmail.com"
             />
+            <span id="erreuremail"></span>
           </div>
           <div>
-            <label class="form-label"> Vos remarques :* </label>
+            <label class="form-label"><b> Vos remarques :* </b></label>
             <textarea
               class="form-control"
               name="message"
+              id="message"
               placeholder=" Ecrivez ici votre message..."
-              required
             ></textarea>
+            <span id="erreurmessage"></span>
           </div>
           <br />
           <div>
@@ -76,6 +80,6 @@
       <a href="#">Tout droit réservé copyright</a>
     </footer>
 
-    <script src="contact.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

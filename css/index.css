@@ -15,18 +15,17 @@ body {
   background-color: white;
 }
 .main {
-  display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: white;
+  color: white;
+  background-color: gray;
   padding: 200px;
 }
 .tarifs {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: gray;
 }
 footer {
   background-color: white;
@@ -50,21 +49,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 h1 {
   height: 100px;
   line-height: 100px;
   text-align: center;
   vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: aliceblue;
-}
-h2 {
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  vertical-align: middle;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
 }
 /*page galerie*/
 .content {
@@ -73,9 +64,7 @@ h2 {
   margin-bottom: 40px;
   background-color: aliceblue;
 }
-.form {
-  padding: 0px;
-}
+
 #filtre {
   display: flex;
   justify-content: center;
@@ -108,22 +97,6 @@ h2 {
 
 @media screen and (max-width: 768px) {
   main {
-    font-size: 50%;
-  }
-  .main {
-    h1 {
-      font-size: medium;
-    }
-  }
-}
-@media screen and (max-width: 450px) {
-  .container {
-    height: 50%;
-  }
-  .h2 {
-    flex-wrap: nowrap;
-  }
-  .tarifs {
     font-size: 50%;
   }
 }
