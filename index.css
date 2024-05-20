@@ -6,7 +6,6 @@ body {
 .container-fluid {
   display: flex;
   justify-content: center;
-  margin: 5px;
   padding: 20px;
 }
 .navigation {
@@ -18,8 +17,8 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: white;
   padding: 100px;
 }
@@ -31,14 +30,16 @@ body {
   background-color: white;
 }
 footer {
+  display: flex;
+  justify-content: center;
   background-color: white;
+  padding: 5px;
 }
-footer,
-a {
-  text-align: center;
+footer a {
   padding: 10px;
   font-size: larger;
   text-decoration: none;
+  border: 2px solid;
 }
 li:first-child::before {
   content: "\0020 \2302";
@@ -51,8 +52,7 @@ ul > li {
   margin: 10px;
   font-size: larger;
 }
-nav,
-a {
+nav a {
   text-decoration: none;
 }
 img {
@@ -60,30 +60,34 @@ img {
   height: auto;
 }
 h1 {
-  height: 100px;
-  line-height: 100px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
 }
-main,
-h2 {
+main h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
   padding: 50px;
   border: 25px solid black;
   border-radius: 20px;
 }
+main div h3 {
+  color: rgb(0, 123, 255);
+  font-weight: 500;
+}
+main div span {
+  color: green;
+  font-weight: 700;
+}
 /*page galerie*/
 .content {
   padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   background-color: aliceblue;
-}
-.form {
-  padding: 0px;
 }
 #filtre {
   display: flex;
@@ -137,5 +141,8 @@ h2 {
   }
   .tarifs {
     font-size: 50%;
+  }
+  nav ul > li {
+    display: block;
   }
 }
