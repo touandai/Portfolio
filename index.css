@@ -16,13 +16,13 @@ body {
 }
 .main {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   background-color: white;
-  padding: 200px;
+  padding: 100px;
 }
 .tarifs {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   padding: 20px;
   color: black;
@@ -30,6 +30,12 @@ body {
 }
 footer {
   background-color: white;
+}
+footer,
+a {
+  text-align: center;
+  padding: 10px;
+  font-size: larger;
 }
 li:first-child::before {
   content: "\0020 \2302";
@@ -59,12 +65,11 @@ h1 {
   color: aliceblue;
 }
 h2 {
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
+  padding: 50px;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 /*page galerie*/
 .content {
@@ -88,6 +93,9 @@ h2 {
   border: 2px solid tomato;
   border-radius: 20px;
   cursor: pointer;
+}
+.text-center {
+  text-align: center;
 }
 #galerie {
   display: flex;
