@@ -43,12 +43,14 @@ Form.addEventListener("submit", (e) => {
     let Erreurname = document.getElementById("erreurnom");
     Erreurname.innerHTML = "Le nom est obligatoire !";
     Erreurname.style.color = "red";
+    Erreurname.style.fontSize = "12px";
     e.preventDefault();
   }
   if (inputEmail.value.trim() == "") {
     let Erreurmail = document.getElementById("erreuremail");
     Erreurmail.innerHTML = "Votre Email est obligatoire !";
     Erreurmail.style.color = "red";
+    Erreurmail.style.fontSize = "12px";
     e.preventDefault();
   }
   //controle saisie champ message//
@@ -56,6 +58,7 @@ Form.addEventListener("submit", (e) => {
     let Erreurtel = document.getElementById("erreurmessage");
     Erreurtel.innerHTML = "Merci d'écrire votre message!";
     Erreurtel.style.color = "red";
+    Erreurtel.style.fontSize = "12px";
     e.preventDefault();
   }
 });

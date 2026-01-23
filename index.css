@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
+  font-size: 14px;
 }
 .main {
   display: flex;
@@ -60,12 +61,13 @@ img {
   height: auto;
 }
 h1 {
-  height: 50px;
-  line-height: 50px;
+  height: 25px;
+  line-height: 25px;
   text-align: center;
   vertical-align: middle;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: aliceblue;
+  font-size: 20px;
 }
 main h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -122,12 +124,21 @@ main div span {
   transition: widht 0.3s;
 }
 
+/*pages contact*/
+main.tarifs {
+  form {
+    legend {
+      em {
+        font-size: medium;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   main {
     font-size: 50%;
-  }
-  .main {
-    h1 {
+    h2 {
       font-size: medium;
     }
   }
