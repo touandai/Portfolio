@@ -2,73 +2,105 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Nos tarifs et Prestation">
-    <title> Tarifs photos Charles Cantin </title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Découvrez les tarifs et prestations photo de Charles Cantin : portraits, séances en famille, grossesse, bébé, mariages et baptêmes.">
+
+    <title>Tarifs et Prestations | Charles Cantin Photographe</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body class="page-tarifs">
+
     <header class="container-fluid">
-        <img src="images/logo2.png" alt="Notre Logo" />
+        <img src="images/logo2.png" alt="Logo Charles Cantin Photographe">
     </header>
-  
-    <nav class="container navigation">
+
+    <nav class="container navigation" aria-label="Navigation principale">
         <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="tarifsetprestations.html">Tarifs et Prestations</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="tarifsetprestations.html" aria-current="page">Tarifs et Prestations</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-        <h1>Tarifs et Prestations </h1>
-   <main class="container tarifs">
+    <section class="tarifs-intro">
+        <span class="tarifs-surtitre">CHARLES CANTIN PHOTOGRAPHE</span>
+        <h1>Tarifs et Prestations</h1>
+        <p>Des instants précieux, des souvenirs qui restent.</p>
+    </section>
 
-        <div class="container prestation">
-             <div>
-                    <h3>« Juste moi »</h3>
-                    <p> > Séance pour une personne, en extérieur ou en studio</p>
-                    <span> Prix: 130 euros</span>
-             </div>   
+    <main class="tarifs-container">
 
-             <div>    
-                    <h3>« Pour deux »</h3>
-                    <p> > Pour deux personnes, en extérieur ou en studio</p>
-                    <span>Prix: 195 euros</span>
-             </div>
+        <section class="prestation" aria-label="Nos prestations photographiques">
 
-             <div>    
-                <h3>« Famille »</h3>
-                <p> > Pour la famille ou les amis jusqu’à 4 personnes, en extérieur ou en studio
-                    30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu’à 2 ans)</p>
-                <span>Prix: 220 euros</span>
-              </div>    
+            <article class="prestation-card">
+                <span class="prestation-numero">01</span>
+                <h2>« Juste moi »</h2>
+                <p>Une séance photo pour une personne, en extérieur ou en studio.</p>
+                <div class="prestation-prix">130 €</div>
+                <a href="contact.html" class="prestation-lien">Réserver une séance <span aria-hidden="true">→</span></a>
+            </article>
 
-             <div>    
-                    <h3>« Il était une fois »</h3>
-                    <p> > Photo de grossesse(À votre domicile, en extérieur ou en studio)</p>
-                    <span>Prix: 160 euros</span>
-              </div> 
+            <article class="prestation-card">
+                <span class="prestation-numero">02</span>
+                <h2>« Pour deux »</h2>
+                <p>Une séance photo à deux, en extérieur ou en studio.</p>
+                <div class="prestation-prix">195 €</div>
+                <a href="contact.html" class="prestation-lien">Réserver une séance <span aria-hidden="true">→</span></a>
+            </article>
 
-             <div>     
-                    <h3>« Mon bébé »</h3>
-                    <p> > Photo d’enfant jusqu’à 3 ans (photo à domicile)</p>
-                    <span>Prix: 100 euros</span>
-            </div>  
+            <article class="prestation-card prestation-card-vedette">
+                <span class="prestation-badge">En famille</span>
+                <span class="prestation-numero">03</span>
+                <h2>« Famille »</h2>
+                <p>Une séance pour la famille ou les amis, jusqu’à 4 personnes, en extérieur ou en studio.</p>
+                <p class="prestation-detail">30 € supplémentaires par personne au-delà de 4, hors enfant jusqu’à 2 ans.</p>
+                <div class="prestation-prix">220 €</div>
+                <a href="contact.html" class="prestation-lien">Réserver une séance <span aria-hidden="true">→</span></a>
+            </article>
 
-             <div>      
-                <h3>« J’immortalise l’événement »</h3>
-                <p> > Prestation de mariage ou baptême sur devis</p>
-                <span>Prix: sur mesure</span>
-             </div>  
-             <br>   
-   </main>
+            <article class="prestation-card">
+                <span class="prestation-numero">04</span>
+                <h2>« Il était une fois »</h2>
+                <p>Une séance photo de grossesse à votre domicile, en extérieur ou en studio.</p>
+                <div class="prestation-prix">160 €</div>
+                <a href="contact.html" class="prestation-lien">Réserver une séance <span aria-hidden="true">→</span></a>
+            </article>
 
-   <footer class="container">
-        <a href="#">Tout droit réservé copyright</a>
-   </footer>
+            <article class="prestation-card">
+                <span class="prestation-numero">05</span>
+                <h2>« Mon bébé »</h2>
+                <p>Une séance photo pour les enfants jusqu’à 3 ans, à domicile.</p>
+                <div class="prestation-prix">100 €</div>
+                <a href="contact.html" class="prestation-lien">Réserver une séance <span aria-hidden="true">→</span></a>
+            </article>
 
-   </body>
-   </html>
+            <article class="prestation-card prestation-card-evenement">
+                <span class="prestation-numero">06</span>
+                <h2>« J’immortalise l’événement »</h2>
+                <p>Une prestation photographique pour votre mariage ou votre baptême.</p>
+                <div class="prestation-prix prestation-prix-devis">Sur devis</div>
+                <a href="contact.html" class="prestation-lien">Demander un devis <span aria-hidden="true">→</span></a>
+            </article>
+
+        </section>
+
+        <section class="tarifs-contact">
+            <div>
+                <h2>Un projet photo en tête ?</h2>
+                <p>Parlons de vos envies et préparons ensemble votre séance photo.</p>
+            </div>
+            <a href="contact.html" class="tarifs-contact-bouton">Me contacter <span aria-hidden="true">→</span></a>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <a href="#">Tous droits réservés © Charles Cantin</a>
+    </footer>
+
+</body>
+</html>
