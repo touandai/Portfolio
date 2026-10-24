@@ -17,3 +17,46 @@
 {
     font: size 1.2rem
 }
+
+
+.page-contact .contact-hero {
+  padding: 76px 0 68px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(185, 151, 101, 0.15),
+      transparent 32%
+    ),
+    linear-gradient(135deg, #172b3a, #243f51);
+  color: #fff;
+}
+
+.page-contact .contact-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #e0c69e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.page-contact .contact-hero h1 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: clamp(2.2rem, 5vw, 3.7rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.page-contact .contact-hero h1 span {
+  color: #d7b783;
+}
+
+.page-contact .contact-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
