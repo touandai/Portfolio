@@ -19,7 +19,7 @@
 }
 
 
-.page-contact .contact-hero {
+.contact-hero {
   padding: 76px 0 68px;
   text-align: center;
   background:
@@ -32,7 +32,7 @@
   color: #fff;
 }
 
-.page-contact .contact-eyebrow {
+.contact-eyebrow {
   display: inline-block;
   margin-bottom: 18px;
   color: #e0c69e;
@@ -41,7 +41,7 @@
   letter-spacing: 0.18em;
 }
 
-.page-contact .contact-hero h1 {
+.contact-hero h1 {
   margin: 0 0 20px;
   color: #fff;
   font-size: clamp(2.2rem, 5vw, 3.7rem);
@@ -49,11 +49,11 @@
   line-height: 1.15;
 }
 
-.page-contact .contact-hero h1 span {
+.contact-hero h1 span {
   color: #d7b783;
 }
 
-.page-contact .contact-hero p {
+.contact-hero p {
   max-width: 650px;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.82);
