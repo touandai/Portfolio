@@ -87,6 +87,7 @@ main div span {
 /*page galerie*/
 /* Introduction de la galerie */
 .galerie-intro {
+   background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
