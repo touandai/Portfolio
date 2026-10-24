@@ -93,24 +93,24 @@ main div span {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin: 30px auto;
-    padding: 30px 15px;
+    margin: 10px auto;
+    padding: 10px 55px;
     box-sizing: border-box;
 }
 
 .galerie-intro h1 {
     height: auto;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     color: #263746;
-    font-size: clamp(28px, 4vw, 40px);
+    font-size: 30px;
     line-height: 1.3;
 }
 
 .galerie-intro p {
     margin: 0;
     color: #687782;
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 .content {
