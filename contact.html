@@ -3,164 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <meta
-      name="description"
-      content="Contactez Charles Cantin, photographe, pour toute question concernant ses prestations et ses tarifs."
-    />
-
-    <meta name="theme-color" content="#172b3a" />
-
-    <title>Contact | Charles Cantin — Photographe</title>
-
+    <meta name="description" content="Contacter Charles CANTIN" />
+    <title>contact Charles Cantin</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
 
-  <body class="page-contact">
-
-    <!-- EN-TÊTE -->
-    <header class="container-fluid contact-header">
-      <a href="index.html" aria-label="Retour à l'accueil">
-        <img src="images/logo2.png" alt="Logo Charles Cantin" />
-      </a>
+  <body>
+    <header class="container-fluid">
+      <img src="images/logo2.png" alt="Notre Logo" />
     </header>
 
-    <!-- NAVIGATION -->
-    <nav class="container navigation" aria-label="Navigation principale">
+    <nav class="container navigation">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="galerie.html">Galerie</a></li>
         <li><a href="tarifsetprestations.html">Tarifs et Prestations</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <main>
-      <!-- INTRODUCTION -->
-      <section class="contact-hero">
-        <div class="container">
-          <span class="contact-eyebrow">ÉCHANGEONS ENSEMBLE</span>
+    <h1>Nous-contacter</h1>
 
-          <h1>
-            Parlons de votre
-            <span>projet.</span>
-          </h1>
-
-          <p>
-            Une question, une demande d'information ou un projet photo ?
-            Je serai ravi d'échanger avec vous.
-          </p>
-        </div>
-      </section>
-
-      <!-- FORMULAIRE -->
-      <section class="container contact-section">
-        <div class="contact-card">
-
-          <div class="contact-card__intro">
-            <span class="contact-icon" aria-hidden="true">✉</span>
-
-            <h2>Envoyez-moi un message</h2>
-
-            <p>
-              Remplissez le formulaire ci-dessous. Les champs marqués
-              d'un astérisque (*) sont obligatoires.
-            </p>
-          </div>
-
-          <div id="form">
-            <form
-              id="contact"
-              name="contact"
-              method="POST"
-              action=""
-              data-netlify="true"
-              netlify
+    <main class="container tarifs">
+      <div id="form">
+        <form id="contact" method="GET" action="" data-netlify="true">
+          <legend>
+            Une question ou des remarques?
+            <em
+              ><br />
+              Merci d'utiliser le formulaire ci-dessous</em
             >
-              <input type="hidden" name="form-name" value="contact" />
-
-              <div class="contact-field">
-                <label for="nom" class="form-label">
-                  Nom <span aria-hidden="true">*</span>
-                </label>
-
-                <input
-                  class="form-control"
-                  type="text"
-                  name="nom"
-                  id="nom"
-                  placeholder="Votre nom"
-                  autocomplete="name"
-                  required
-                />
-
-                <span id="erreurnom" class="contact-error"></span>
-              </div>
-
-              <div class="contact-field">
-                <label for="email" class="form-label">
-                  Adresse e-mail <span aria-hidden="true">*</span>
-                </label>
-
-                <input
-                  class="form-control"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="vous@exemple.fr"
-                  autocomplete="email"
-                  required
-                />
-
-                <span id="erreuremail" class="contact-error"></span>
-              </div>
-
-              <div class="contact-field">
-                <label for="message" class="form-label">
-                  Votre message <span aria-hidden="true">*</span>
-                </label>
-
-                <textarea
-                  class="form-control"
-                  name="message"
-                  id="message"
-                  rows="6"
-                  placeholder="Décrivez votre demande ou votre projet..."
-                  required
-                ></textarea>
-
-                <span id="erreurmessage" class="contact-error"></span>
-              </div>
-
-              <p class="contact-required">
-                * Champs obligatoires
-              </p>
-
-              <button class="btn btn-primary contact-submit" type="submit">
-                Envoyer mon message
-                <span aria-hidden="true">→</span>
-              </button>
-            </form>
+          </legend>
+          <div>
+            <label class="form-label"><b>Nom :*</b></label>
+            <input
+              class="form-control"
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Romaric"
+            />
+            <span id="erreurnom"></span>
           </div>
-
-        </div>
-      </section>
+          <div>
+            <label class="form-label"><b>E-mail :* </b></label>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="monadresse@gmail.com"
+            />
+            <span id="erreuremail"></span>
+          </div>
+          <div>
+            <label class="form-label"><b> Vos remarques :* </b></label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              placeholder=" Ecrivez ici votre message..."
+            ></textarea>
+            <span id="erreurmessage"></span>
+          </div>
+          <br />
+          <div>
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+          </div>
+          <br />
+        </form>
+      </div>
     </main>
 
-    <!-- PIED DE PAGE -->
-    <footer class="container contact-footer">
-      <p>
-        © <span id="annee"></span> Charles Cantin — Tous droits réservés.
-      </p>
-
-      <a href="index.html">Retour à l'accueil</a>
+    <footer class="container">
+      <a href="#">Tout droit réservé copyright</a>
     </footer>
-
-    <script>
-      document.getElementById("annee").textContent =
-        new Date().getFullYear();
-    </script>
 
     <script src="js/contact.js"></script>
   </body>
