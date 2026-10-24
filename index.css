@@ -584,21 +584,6 @@ main div span {
     text-align: center;
 }
 
-/* Tablettes */
-@media screen and (max-width: 768px) {
-    .page-contact .contact-hero {
-        padding: 40px 18px 32px;
-    }
-
-    .page-contact .contact-main {
-        padding: 28px 16px 40px;
-    }
-
-    .page-contact .contact-card {
-        padding: 30px 25px;
-    }
-}
-
 
 /* Tablettes */
 @media screen and (max-width: 900px) {
@@ -682,6 +667,19 @@ main div span {
 
     .page-tarifs .tarifs-contact h2 {
         font-size: 21px;
+    }
+
+  /* PAGE CONTACT */ 
+      .page-contact .contact-hero {
+        padding: 40px 18px 32px;
+    }
+
+    .page-contact .contact-main {
+        padding: 28px 16px 40px;
+    }
+
+    .page-contact .contact-card {
+        padding: 30px 25px;
     }
 }
 
