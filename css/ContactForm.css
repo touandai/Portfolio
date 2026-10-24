@@ -22,20 +22,14 @@
 .contact-hero {
   padding: 76px 0 68px;
   text-align: center;
-  background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(185, 151, 101, 0.15),
-      transparent 32%
-    ),
-    linear-gradient(135deg, #172b3a, #243f51);
+  background:black;
   color: #fff;
 }
 
 .contact-eyebrow {
   display: inline-block;
   margin-bottom: 18px;
-  color: #e0c69e;
+  color: #fff;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -50,7 +44,7 @@
 }
 
 .contact-hero h1 span {
-  color: #d7b783;
+  color: #fff;
 }
 
 .contact-hero p {
