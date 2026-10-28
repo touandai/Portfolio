@@ -680,9 +680,63 @@ nav.navigation {
     box-sizing: border-box;
 }
 
-/* Évite les débordements sur mobile */
+/* =====================================
+   FOOTER MODERNE ET RESPONSIVE
+===================================== */
+
+footer.footer-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto;
+    padding: 22px 20px;
+    width: calc(100% - 30px);
+    max-width: 1140px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(38, 55, 70, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(20, 35, 45, 0.08);
+}
+
+.footer-site .footer-copyright {
+    margin: 0;
+    color: #52616b;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.footer-site .footer-liens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    width: 100%;
+}
+
+.footer-site .footer-liens a {
+    padding: 4px 0;
+    border: none;
+    color: #263746;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-site .footer-liens a:hover,
+.footer-site .footer-liens a:focus-visible {
+    color: #a17d45;
+    text-decoration: underline;
+}
+
+/* Adaptation mobile */
 @media screen and (max-width: 768px) {
-    nav.navigation,
+
+   nav.navigation,
     main,
     footer {
         width: calc(100% - 24px);
@@ -696,7 +750,20 @@ nav.navigation {
     .page-contact .contact-hero {
         margin-top: 16px;
     }
+
+    
+    footer.footer-site {
+        width: calc(100% - 24px);
+        padding: 20px 14px;
+        gap: 10px;
+    }
+
+    .footer-site .footer-liens {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
+
 
 
 
