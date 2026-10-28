@@ -1,194 +1,65 @@
-
-/* =====================================
-   HEADER : LOGO
-===================================== */
-
-header.container-fluid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+body {
+  background-image: url("images/fondecran.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 14px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 100px;
+}
+.tarifs {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: black;
+  background-color: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 5px;
+}
+footer a {
+  padding: 10px;
+  font-size: larger;
+  text-decoration: none;
+  border: 2px solid;
+}
+li:first-child::before {
+  content: "\0020 \2302";
 }
 
-header.container-fluid img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+nav,
+ul > li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
 }
-
-
-/* =====================================
-   MENU PRINCIPAL
-===================================== */
-
-nav.navigation {
-    position: relative;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 30px);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    box-sizing: border-box;
-
-    background: rgba(255, 255, 255, 0.97);
-    border: 1px solid rgba(38, 55, 70, 0.08);
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(20, 35, 45, 0.10);
+nav a {
+  text-decoration: none;
 }
-
-nav.navigation ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
-
-nav.navigation ul li {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-}
-
-/* Supprime l'ancien symbole devant le premier lien */
-nav.navigation ul li:first-child::before {
-    content: none;
-}
-
-nav.navigation ul li a {
-    display: block;
-    padding: 12px 18px;
-
-    color: #263746;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-
-    border-radius: 8px;
-    transition:
-        background-color 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease;
-}
-
-nav.navigation ul li a:hover,
-nav.navigation ul li a:focus-visible {
-    color: #8d6937;
-    background-color: #f3eee6;
-    outline: none;
-}
-
-nav.navigation ul li a:focus-visible {
-    box-shadow: 0 0 0 3px rgba(161, 125, 69, 0.25);
-}
-
-
-/* =====================================
-   MENU BURGER
-===================================== */
-
-/* Caché sur ordinateur */
-.menu-burger {
-    display: none;
-}
-
-
-/* =====================================
-   RESPONSIVE : TABLETTES ET MOBILES
-===================================== */
-
-@media screen and (max-width: 768px) {
-
-    nav.navigation {
-        justify-content: flex-end;
-        min-height: 58px;
-        padding: 8px 12px;
-        border-radius: 10px;
-    }
-
-    /* Bouton burger */
-    .menu-burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-
-        width: 44px;
-        height: 44px;
-        padding: 8px;
-
-        background: #fff;
-        border: 1px solid #e0e5e8;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-
-    .menu-burger span {
-        display: block;
-        width: 22px;
-        height: 2px;
-        background: #263746;
-        border-radius: 2px;
-        transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    /* Menu fermé par défaut */
-    nav.navigation ul {
-        display: none;
-        position: absolute;
-        top: calc(100% + 8px);
-        left: 0;
-        right: 0;
-
-        flex-direction: column;
-        align-items: stretch;
-        gap: 4px;
-
-        margin: 0;
-        padding: 12px;
-
-        background: #fff;
-        border: 1px solid #e5e8eb;
-        border-radius: 12px;
-        box-shadow: 0 12px 28px rgba(20, 35, 45, 0.15);
-    }
-
-    /* Menu ouvert */
-    nav.navigation ul.is-open {
-        display: flex;
-    }
-
-    nav.navigation ul li a {
-        padding: 14px 16px;
-        font-size: 15px;
-    }
-
-    /* Animation du burger en croix */
-    .menu-burger[aria-expanded="true"] span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .menu-burger[aria-expanded="true"] span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-burger[aria-expanded="true"] span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-
 h1 {
   height: 25px;
   line-height: 25px;
