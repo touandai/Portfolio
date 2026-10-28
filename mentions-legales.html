@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Mentions légales | Charles Cantin Photographe</title>
+    <meta name="description" content="Consultez les mentions légales du site Charles Cantin Photographe.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-legale {
+            width: calc(100% - 30px);
+            max-width: 1140px;
+            margin: 20px auto;
+            padding: 35px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(20, 35, 45, 0.10);
+            color: #263746;
+            line-height: 1.8;
+        }
+        .page-legale h1 {
+            height: auto;
+            margin: 0 0 25px;
+            color: #263746;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.3;
+        }
+        .page-legale h2 {
+            margin: 28px 0 10px;
+            padding: 0;
+            border: 0;
+            color: #8d6937;
+            font-size: 21px;
+        }
+        .page-legale p {
+            margin: 10px 0;
+        }
+        .page-legale a {
+            color: #8d6937;
+            overflow-wrap: anywhere;
+        }
+        @media (max-width: 600px) {
+            .page-legale {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="container-fluid">
+    <img src="images/logo2.png" alt="Charles Cantin Photographe">
+</header>
+
+<nav class="container navigation" aria-label="Navigation principale">
+    <button class="menu-burger" id="menu-burger" type="button"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+    </button>
+    <ul id="menu-principal">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="tarifsetprestations.html">Tarifs et Prestations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="page-legale">
+    <h1>Mentions légales</h1>
+
+    <p>Les présentes mentions légales précisent les informations relatives au site Charles Cantin Photographe.</p>
+
+    <h2>1. Éditeur du site</h2>
+    <p>
+        Nom : Charles Cantin<br>
+        Nom commercial : Charles Cantin Photographe<br>
+        Adresse professionnelle : [Adresse professionnelle]<br>
+        E-mail : [Adresse e-mail de contact]<br>
+        Téléphone : [Numéro de téléphone]
+    </p>
+    <p>
+        Statut juridique : [Statut juridique, le cas échéant]<br>
+        SIRET : [Numéro SIRET, si applicable]
+    </p>
+
+    <h2>2. Directeur de la publication</h2>
+    <p>Charles Cantin, en qualité d’éditeur du site.</p>
+
+    <h2>3. Hébergement</h2>
+    <p>
+        Hébergeur : [Nom de l’hébergeur]<br>
+        Adresse : [Adresse de l’hébergeur]<br>
+        Site internet : [Site internet de l’hébergeur]
+    </p>
+
+    <h2>4. Propriété intellectuelle</h2>
+    <p>
+        Sauf mention contraire, les photographies, textes, logos et éléments
+        graphiques présents sur ce site sont protégés par le droit de la
+        propriété intellectuelle. Toute reproduction, diffusion ou utilisation
+        sans autorisation préalable est interdite, sous réserve des exceptions
+        prévues par la loi.
+    </p>
+
+    <h2>5. Responsabilité</h2>
+    <p>
+        L’éditeur s’efforce de fournir des informations exactes et à jour.
+        Il ne peut toutefois garantir l’absence d’erreurs ou d’omissions.
+        L’utilisateur consulte le site sous sa propre responsabilité.
+    </p>
+
+    <h2>6. Données personnelles</h2>
+    <p>
+        Pour en savoir plus sur la collecte et le traitement des données
+        personnelles, consultez notre
+        <a href="confidentialite.html">politique de confidentialité</a>.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+        Pour toute question concernant le site, vous pouvez utiliser la
+        <a href="contact.html">page de contact</a>.
+    </p>
+</main>
+
+<footer class="container footer-site">
+    <p class="footer-copyright">
+        &copy; <span id="annee-footer"></span> Charles Cantin Photographe.
+        Tous droits réservés.
+    </p>
+    <nav class="footer-liens" aria-label="Informations légales">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Politique de confidentialité</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</footer>
+
+<script>
+    document.getElementById("annee-footer").textContent =
+        new Date().getFullYear();
+</script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
