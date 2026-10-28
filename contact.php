@@ -47,6 +47,6 @@
        <p><a href="#">Tout droit réservé copyright</a></p>
    </footer>
    <script src="contact.js"></script>
-   
+    <script src="js/index.js"></script>
  </body>
  </html>     
