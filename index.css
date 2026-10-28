@@ -20,7 +20,6 @@ header.container-fluid img {
     object-fit: contain;
 }
 
-
 /* =====================================
    MENU PRINCIPAL
 ===================================== */
@@ -110,7 +109,7 @@ nav.navigation ul li a:focus-visible {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: white;
-  padding: 100px;
+  padding: 200px;
 }
 .tarifs {
   margin-top: 5px;
@@ -651,6 +650,54 @@ main div span {
     line-height: 1.6;
     text-align: center;
 }
+
+
+/* =====================================
+   HARMONISATION DES LARGEURS
+   Navigation, contenu principal et footer
+===================================== */
+
+nav.navigation,
+main,
+footer {
+    width: calc(100% - 30px);
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Espace régulier sous la navigation */
+nav.navigation {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Espacement des titres sur Tarifs et Contact */
+.page-tarifs .tarifs-intro,
+.page-contact .contact-hero {
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+/* Évite les débordements sur mobile */
+@media screen and (max-width: 768px) {
+    nav.navigation,
+    main,
+    footer {
+        width: calc(100% - 24px);
+    }
+
+    nav.navigation {
+        margin-bottom: 16px;
+    }
+
+    .page-tarifs .tarifs-intro,
+    .page-contact .contact-hero {
+        margin-top: 16px;
+    }
+}
+
 
 
 /* Tablettes */
